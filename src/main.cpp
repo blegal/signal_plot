@@ -49,19 +49,6 @@ void playS(RawSound* _buffer)
 }
 
 
-////////////////////////////////////////////////////////////
-/// Entry point of application
-///
-/// \return Application exit code
-///
-////////////////////////////////////////////////////////////
-
-//
-// Fc = Fs / 10
-//
-
-
-
 
 void mono_2_stereo(RawSound *_in, RawSound *_out)
 {
@@ -171,23 +158,6 @@ void histogram(short *in, short *out, int n)
         out[i] = 32767.0 * ((float)hist[ i ] / (float)n);
     }
 }
-
-/*
-int counter;
-short echo_buffer[48600];
-void echo_fx(short *in, short *out, int n)
-{
-    echo_buffer[48600]
-}
-
-void echo_filter(short *in, short *out, int n)
-{
-    for (int i = 0; i < n; i++)
-    {
-        out[i] = round(256.0 * sin( (i*50.0/22400.0)));
-    }
-}
-*/
 
 
 int main(int argc, char* argv[])
