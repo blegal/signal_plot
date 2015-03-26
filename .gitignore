@@ -1,0 +1,8 @@
+
+*.stash
+
+build/Makefile
+
+build/qtcreator
+
+qtcreator.pro.user
